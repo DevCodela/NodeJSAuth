@@ -6,7 +6,11 @@ const schemas = {
 
 	userSchema: new Schema({
 		username: {type: String},
-		password: {type: String}
+		password: {type: String},
+
+		facebook: {
+			id: {type: String}
+		}
 	})
 
 };

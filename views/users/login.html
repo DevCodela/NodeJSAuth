@@ -7,7 +7,7 @@
 <body>
 	<h2>Login</h2>
 	<div>
-		<a href="">Ingresa con Facebook</a>
+		<a href="/auth/facebook/">Ingresa con Facebook</a>
 	</div>
 	<br>
 	<div>
@@ -15,9 +15,10 @@
 	</div>
 	<br>
 	<div>
-		<form>
+		{{ error_message }}
+		<form method="POST" action="/login/">
 			<input type="text" name="username" placeholder="Username">
-			<input type="text" name="password" placeholder="password">
+			<input type="password" name="password" placeholder="password">
 			<input type="submit" value="Ingresar">
 		</form>
 	</div>

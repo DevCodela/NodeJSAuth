@@ -6,6 +6,10 @@
 </head>
 <body>
 	<h1>Home</h1>
+	{% if user %}
+		<h2>Holaa {{ user.username }}</h2>
+		<a href="/salir/">Salir</a>
+	{% endif %}
 	<a href="/ingresar/">Ingresar</a>
 </body>
 </html>
